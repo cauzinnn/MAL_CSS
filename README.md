@@ -10,4 +10,6 @@ thats it pog now paste it in MAL
 
 
 pics:
+
+
 ![zero two](https://i.imgur.com/HpXbeDl.png)
