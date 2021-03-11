@@ -1,0 +1,543 @@
+@\import "https://malscraper.azurewebsites.net/covers/anime/Tsukihiko_/presets/dataimagelinkafter";
+
+@\import url('https://fonts.googleapis.com/css?family=Barlow:500|Ubuntu+Mono');
+
+:focus
+{outline-color: transparent;
+outline-style: none;}
+
+*
+{text-decoration: none !important;}
+
+*:not(.fa)
+{font-family: Barlow, Meiryo, Osaka, DejaVu Sans, sans-serif !important;
+font-size: 9pt !important;
+font-weight: 500;}
+
+*:not(.list-unit .list-status-title .text), :before, :after
+{letter-spacing: -0.05em !important;}
+
+.initialize-tutorial
+{display: none !important;}
+
+.link.sort + a {display: none;} 
+
+body
+{color: #fff;
+background: url(https://i1.lensdump.com/i/jYHltC.png) repeat fixed
+center !important;
+min-height: 100vh; }
+
+a
+{color: #FFF;
+transition: .5s;}
+
+.header
+{background: rgb(0,0,0);
+width: 35% !important;
+height: 28px !important;
+position: fixed;
+right:1200px;
+top: 0;
+box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.35);
+z-index: 10;}
+
+.header .header-title
+{background: none !important;
+width: 38px;
+font-size: 0 !important;
+text-indent: 0;
+border: 1px solid #fff;
+top: 3px;
+left: calc((100% - 680px)/2 + 20px);
+height: 22px;
+line-height: 20px;
+box-sizing: border-box;}
+
+.header .header-title:before
+{content: "HOME";
+font-size: 7pt !important;
+width: 35px;
+font-weight: 500 !important;}
+
+.header a:hover
+{text-decoration: none !important;}
+
+.header .header-menu
+{display: none !important;}
+
+.list-menu-float
+{position: initial;
+height: 0;
+overflow: hidden;
+border: 0;}
+
+.list-menu-float .icon-menu .text
+{top: 0;
+left: 0;
+width: 100%;
+opacity: 1;
+text-transform: uppercase;
+font-size: 7pt !important;}
+
+.list-menu-float .icon-menu:hover .text
+{width: 100%;}
+
+.list-menu-float .icon-menu.profile, .list-menu-float .icon-menu.quick-add
+{position: fixed;
+display: block;
+background: none !important;
+font-size: 7pt !important;
+color: #fff;
+text-indent: 0;
+border: 1px solid #fff;
+top: 3px;
+height: 22px;
+line-height: 20px;
+box-sizing: border-box;
+z-index: 20;}
+
+.list-menu-float .icon-menu.profile:before
+{content: "PROFILE";}
+
+.list-menu-float .icon-menu.profile
+{left: calc((100% - 1840px)/2 + 67px);
+width: 48px;}
+
+.list-menu-float .icon-menu.quick-add
+{left: calc((100% - 90px)/2 + 124px);
+display: 0;
+visibility: hidden;
+width: 63px;}
+
+.list-menu-float .icon-menu.quick-add:hover
+{width: 63px !important;}
+
+.list-menu-float .icon-menu.quick-add svg
+{display: none !important;}
+
+.list-container
+{position: static;
+width: 650px;
+margin: 50px;
+background-color: #000;
+padding: 0 20;
+border: none !important;
+box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.35);
+margin-top: 40px !important;
+min-height: calc(100vh - 80px) !important;}
+
+.status-menu-container
+{width: 354px;
+height: auto;
+background-color: transparent;
+border: 0;
+position: fixed !important;
+top: 3px !important;
+right: calc((130% - 100px)/2 + 11px);
+z-index: 20;}
+
+.list-block, .status-menu-container.fixed + div.list-block
+{margin-top: 0px !important;}
+
+.status-menu-container .status-menu
+{border-spacing: 9px 0;}
+
+.status-menu-container .status-menu .status-button
+{font-size: 0 !important;
+color: transparent !important;
+width: 22px;
+height: 22px;
+right:20px;
+background-color: transparent;
+background-repeat: no-repeat;
+background-position: center;
+border: 1px solid #fff;
+padding: 0;
+box-sizing: border-box;}
+
+.status-menu-container .status-menu .status-button::after
+{display: none !important;}
+
+.status-button.all_anime
+{background-image: url(https://dl.dropboxusercontent.com/s/7gvm3yqqh1esd6g/all.png);}
+.status-button.watching
+{background-image: url(https://dl.dropboxusercontent.com/s/11oe0zzct0nx5xb/progress.png);}
+.status-button.completed
+{background-image: url(https://dl.dropboxusercontent.com/s/hcwign5xhdy84il/finished.png);}
+.status-button.onhold
+{background-image: url(https://dl.dropboxusercontent.com/s/xwdzpyjwio9snus/hold.png);}
+.status-button.dropped
+{background-image: url(https://dl.dropboxusercontent.com/s/4zvjfhj1av0h1fy/drop.png);}
+.status-button.plantowatch
+{background-image: url(https://dl.dropboxusercontent.com/s/nhpn4pg6z78skjn/plan.png);}
+
+.status-menu-container .search-container
+{position: inherit;
+right: 0;
+display: table-cell;}
+
+.status-menu-container .search-container #search-box, .status-menu-container .search-container #search-box.open
+{width: 150px;
+margin: 0;
+}
+
+.status-menu-container .search-container #search-button
+{display: none;}
+
+.status-menu-container .search-container #search-box input
+{background: transparent;
+border: 1px solid #fff;
+color: #fff;}
+
+.cover-block, .list-unit, .list-unit .list-status-title, .list-unit .list-stats
+{width: 650px !important;
+box-sizing: border-box;}
+
+.list-unit .list-status-title
+{background: #000 !important;
+border-bottom: 1px solid #fff;}
+
+.list-unit .list-status-title .text
+{color: #fff !important;
+text-transform: uppercase;
+font-weight: 500 !important;
+letter-spacing: 0.5em !important;}
+
+.list-unit .list-status-title .stats a
+{color: #000 !important;}
+
+.list-unit .list-stats
+{background-color: #000;
+height: 22px !important;
+line-height: 22px !important;
+font-size: 7pt !important;
+font-weight: 500 !important;}
+
+.list-stats span
+{font-size: 7pt !important;}
+
+.list-table
+{border: 0;}
+
+.list-table .list-table-header .header-title
+{background: none !important;
+border: none !important;
+height: 0px !important;
+padding: 0 !important;
+visibility:hidden;
+box-sizing: border-box;}
+
+.clearfix::after
+{display: none !important;}
+
+.list-table .list-table-data .data
+{border: 0;
+height: 23px;
+line-height: 22px;
+transition: .5s;
+padding: 0 !important;}
+
+.list-table .list-table-data .data *
+{font-weight: normal !important;
+transition: .5s;}
+
+.list-table > tbody:nth-of-type(2n+1)
+{background-color: transparent;}
+
+.list-item:hover .watching ~ .data,
+.list-item:hover .reading ~ .data
+{background-color: #3ebd6d !important;}
+
+.list-item:hover .completed ~ .data
+{background-color: #03b3ff !important;}
+
+.list-item:hover .onhold ~ .data
+{background-color: #ffbb00 !important;}
+
+.list-item:hover .dropped ~ .data
+{background-color: #dc143c !important;}
+
+.list-item:hover .plantowatch ~ .data,
+.list-item:hover .plantoread ~ .data
+{background-color: #fff !important;}
+
+.list-item:hover .data, .list-item:hover .data *
+{color: #fff;}
+
+.list-table .list-table-data .data.title .add-edit-more
+{margin-right: 0;
+font-size: 0 !important;
+color: transparent !important;
+height: 100%;
+display: flex;
+align-items: center;
+transition: .5s;
+visibility: hidden;
+opacity: 0;}
+
+.add-edit-more .List_LightBox, .add-edit-more .more a
+{font-size: 7pt !important;
+text-transform: lowercase;
+display: inline-block !important;
+width: 35px;
+height: 15px;
+box-sizing: border-box;
+border: 1px solid #fff;
+text-align: center;
+line-height: 13px;}
+
+.list-table .list-table-data .data.title .add-edit-more *:hover
+{text-decoration: none !important;}
+
+.add-edit-more .List_LightBox
+{margin-right: 3px;}
+
+.list-item:hover .add-edit-more
+{visibility: visible !important;
+opacity: 1 !important;}
+
+.list-item:hover .add-edit-more .List_LightBox, .list-item:hover .add-edit-more .more a
+{color: #fff;
+border: 1px solid #fff;}
+
+.list-table .list-table-data .data.title .rewatching, .list-table .list-table-data .data.title .rereading, .list-table .list-table-data .data.title .content-status
+{display: inline-block;
+font-size: 7pt !important;
+color: #fff;
+text-transform: lowercase;
+height: 15px;
+box-sizing: border-box;
+border: 1px solid #fff;
+text-align: center;
+line-height: 14px;
+padding: 0 3px;
+transition: .5s;}
+
+.list-item:hover .rewatching, .list-item:hover .rereading, .list-item:hover .content-status
+{color: #fff !important;
+border: 1px solid #fff !important;}
+
+.borderRBL
+{background-color: #000;}
+
+.borderRBL, .borderRBL *
+{color: #fff;
+font-size: 8pt !important;
+text-transform: lowercase;
+font-family: ubuntu mono !important;
+line-height: 2;}
+
+.data.progress input
+{background-color: transparent;
+border: 0;
+height: 15px;
+margin: 0;
+width: 16px !important;
+text-align: right;}
+
+.list-unit .loading-space
+{margin: 8px 8px 0 8px;}
+
+#footer
+{bottom: 0;
+width: 0;
+height: 0px}
+
+#footer-block
+{background-color: #000;
+height: 0%;
+box-sizing: border-box;
+padding: 0;
+display: flex;
+justify-content: center;
+align-items: center;}
+
+#copyright
+{color: #fff;
+font-size: 2pt !important
+padding: 0;}
+
+
+.data.status
+{display: block !important;
+position: fixed;
+top: 65px;
+left: calc(((100% - 1890px)/2) + 715px);
+width: 200px !important;
+height: 280px !important;
+visibility: hidden;
+opacity: 0;
+transition: .5s;
+z-index: 100;}
+
+.data.status.watching, .data.status.reading
+{background: linear-gradient(180deg, rgba(62,189,109,0.75) 0%, rgba(62,189,109,0.25) 25%, rgba(62,189,109,0) 50%) !important;}
+.data.status.completed
+{background: linear-gradient(180deg, rgba(3,179,255,0.75) 0%, rgba(3,179,255,0.25) 25%, rgba(3,179,255,0) 50%) !important;}
+.data.status.onhold
+{background: linear-gradient(180deg, rgba(255,187,0,0.75) 0%, rgba(255,187,0,0.25) 25%, rgba(255,187,0,0) 50%) !important;}
+.data.status.dropped
+{background: linear-gradient(180deg, rgba(220,20,60,0.75) 0%, rgba(220,20,60,0.25) 25%, rgba(220,20,60,0) 50%) !important;}
+.data.status.plantowatch, .data.status.plantoread
+{background: linear-gradient(180deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.25) 25%, rgba(0,0,0,0) 50%) !important;}
+
+.list-item:hover .data.status
+{visibility: visible;
+opacity: 1;}
+
+.list-table .list-table-header .header-title.status
+{width: 0 !important;
+font-size: 0 !important;
+color: transparent !important;}
+
+.data.tags div
+{display: block;
+position: fixed;
+left: calc(((100% - 690px)/2) + 715px);
+bottom: calc(100% - 335px);
+width: 190px;
+background-color: rgba(255,255,0,0.5);
+color: transparent !important;
+line-height: 1 !important;
+font-size: 0 !important;
+text-align: center;
+padding: 5px;
+box-sizing: border-box;
+visibility: hidden;
+opacity: 0;
+transition: .5s;
+overflow: hidden;
+pointer-events: none;
+padding: 1px 0;}
+
+div[class^="tags-"] span
+{font-size: 0 !important;}
+
+div[class^="tags-"] a
+{background-color: #fff;
+display: inline-block;
+padding: 0 2px;
+margin: 2px;
+color: #fff !important;
+font-size: 7.5pt !important;
+text-transform: uppercase;
+height: 12px;
+line-height: 12px;}
+
+.data.tags .edit
+{display: none !important;}
+
+.list-item:hover .data.tags div
+{visibility: visible;
+opacity: 1;}
+
+.list-table .list-table-header .header-title.tags
+{width: 0 !important;
+font-size: 0 !important;
+color: transparent !important;}
+
+
+.list-table .list-table-header .header-title.started
+{display: block !important;
+position: fixed;
+top: 361px;
+left: calc(((100% - 690px)/2) + 710px);
+background-color: #fff !important;
+font-size: 7.5pt !important;
+text-transform: uppercase;
+height: 12px;
+line-height: 12px;
+visibility: hidden;
+opacity: 0;
+transition: .5s;}
+
+.data.season
+{display: block !important;
+position: fixed;
+top: 361px;
+left: calc(((100% - 690px)/2) + 900px);
+font-size: 7.5pt !important;
+text-transform: uppercase;
+height: 12px;
+line-height: 12px;
+visibility: hidden;
+opacity: 0;
+transition: .5s;}
+
+
+.list-table .list-table-header .header-title.studio
+{display: block !important;
+position: fixed;
+top: 381px;
+left: calc(((100% - 690px)/2) + 710px);
+background-color: #fff !important;
+font-size: 7.5pt !important;
+text-transform: uppercase;
+height: 12px;
+line-height: 12px;
+visibility: hidden;
+opacity: 0;
+transition: .5s;}
+
+.data.studio
+{display: block !important;
+position: fixed;
+top: 381px;
+left: calc(((100% - 690px)/2) + 900px);
+font-size: 7.5pt !important;
+text-transform: uppercase;
+height: 12px;
+line-height: 12px;
+visibility: hidden;
+opacity: 0;
+transition: .5s;}
+
+
+.data.image a:after{
+width: 200px;
+height: 280px;
+}
+
+
+.data.image a:after{
+position: fixed;
+top: 60px;
+left: calc(((100% - 1890px)/2) + 710px);   
+}
+
+
+
+.data.image a:after
+{content: "";
+display: block !important;
+background-color: rgba(0,0,0,.3);
+background-position: center !important;
+background-repeat: no-repeat !important;
+background-size: cover;
+border: 5px solid #000;
+box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.25);
+visibility: hidden;
+opacity: 0;
+transition: opacity .8s linear, margin-left .5s ease, transform 1s ease-in-out;
+z-index: 5;}
+ 
+ 
+.list-table .list-table-data:hover .data.image a:after {
+visibility: visible;
+opacity: 1;
+transition: .3s ease-out;}
+.data.image .image{
+   opacity: 0;
+   display: none;
+}
+
+.list-table .list-table-header .header-title.image {
+font-size: 1px !important;
+display: block !important;
+border-width: 0 !important;
+background: none !important;
+position: fixed !important;
+opacity: 0;
+display: none;
+}
