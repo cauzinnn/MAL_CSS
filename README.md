@@ -7,3 +7,7 @@ if you're using it for a mangalist just change the first import to manga instead
 you can change the font easily by linking to it (second import)
 
 thats it pog now paste it in MAL
+
+
+pics:
+https://imgur.com/a/ZNIVDNJ
